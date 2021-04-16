@@ -13,10 +13,6 @@ export class TestComponentComponent implements OnInit {
   constructor(private exRateService:ExchangeRateAPIService) { }
 
   ngOnInit(): void {
-    this.exRateService.getExchangeRate().subscribe(exRates => {
-      this.exRates = exRates;
-      console.log(this.exRates)
-    });
 
   }
 

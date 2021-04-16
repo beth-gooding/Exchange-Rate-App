@@ -1,0 +1,31 @@
+<div class="form">
+    <label for="base_currency">Convert from:</label>
+    <select 
+        id="base_currency" 
+        form="exchange_form"
+        name="baseCurrency"
+        [(ngModel)]="baseCurrency">
+
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+    </select>
+    <label for="target_currency">Convert to:</label>
+    <select 
+        id="target_currency" 
+        form="exchange_form"
+        name="targetCurrency"
+        [(ngModel)]="targetCurrency">
+
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+    </select>
+    <form id="exchange_form" (ngSubmit)="onSubmit()">
+        <label for="amount">Amount to convert:</label>
+        <input 
+        type="number" 
+        id="amount" 
+        name="amountToConvert"
+        [(ngModel)]="amountToConvert">
+        <input type="submit">
+    </form>
+</div>

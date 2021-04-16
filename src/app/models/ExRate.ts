@@ -6,6 +6,8 @@ export class ExRate {
     time_last_update_utc:string;
     time_next_update_unix:number;
     time_next_update_utc:string;
-    basecode:string;
-    conversion_rates:{};
+    base_code:string;
+    target_code:string;
+    conversion_rates:number;
+    conversion_result:number;
 }
