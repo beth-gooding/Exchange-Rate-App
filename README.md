@@ -1,8 +1,6 @@
 # Exchange-Rate-App
 An exchange rate app for practicing Angular using ExchangeRate-API
 
-# ExchangeRateConverter
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
 
 ## Development server
